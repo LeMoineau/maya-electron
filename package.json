@@ -1,0 +1,14 @@
+{
+  "name": "maya-language-creator",
+  "version": "1.0.0",
+  "description": "manage creation of maya language",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Pierrot",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^13.1.6"
+  }
+}

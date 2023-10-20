@@ -1,0 +1,90 @@
+
+.top-toolbar, .bottom-toolbar {
+
+  position: fixed;
+  right: 0;
+  width: auto;
+  max-width: calc(100vw - var(--nav-width));
+  height: auto;
+  padding: var(--toolbar-padd);
+  z-index: 3;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.top-toolbar {
+
+  top: var(--header-height);
+
+}
+
+.bottom-toolbar {
+
+  bottom: 0;
+
+}
+
+.toolbar-button {
+
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background-color: transparent;
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-left: var(--space-between-toolbar-button);
+
+}
+
+.toolbar-button > * {
+
+  width: inherit;
+  height: inherit;
+  fill: none;
+  fill-opacity: 1;
+  stroke: var(--toolbar-button-color);
+  stroke-width: 0.237;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  cursor: pointer;
+
+}
+
+.toolbar-icon {
+
+  width: 30px;
+  height: 30px;
+
+}
+
+.toolbar-button[state="hide"] {
+
+  display: none;
+
+}
+
+#hide-symbol-points > svg {
+
+  stroke: var(--toolbar-button-color);
+  fill: none;
+  stroke-width: 0.5;
+
+}
+
+#show-symbol-points > svg {
+
+  mix-blend-mode: normal;
+  stroke:none;
+  fill: var(--toolbar-button-color);
+  stroke-width: 0.337;
+
+}
+
+.toggle-symbols-organisation > svg {
+
+  fill: var(--toolbar-button-color);
+
+}

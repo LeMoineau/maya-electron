@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="showPoints.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 3.1749949 3.1749948"
+   height="3.1749949mm"
+   width="3.1749949mm">
+  <g
+     transform="translate(-56.789337,-27.68519)">
+    <circle
+       r="0.26458332"
+       cy="107.15627"
+       cx="109.80209"
+       transform="translate(-52.748173,-79.2065)" />
+    <circle
+       r="0.26458332"
+       cy="107.15627"
+       cx="111.125"
+       transform="translate(-52.748173,-79.2065)" />
+    <circle
+       r="0.26458332"
+       cy="107.15627"
+       cx="112.44792"
+       transform="translate(-52.748173,-79.2065)" />
+    <circle
+       r="0.26458332"
+       cy="108.47918"
+       cx="109.80209"
+       transform="translate(-52.748173,-79.2065)" />
+    <circle
+       r="0.26458332"
+       cy="108.47918"
+       cx="111.125"
+       transform="translate(-52.748173,-79.2065)" />
+    <circle
+       r="0.26458332"
+       cy="108.47918"
+       cx="112.44792"
+       transform="translate(-52.748173,-79.2065)" />
+    <circle
+       r="0.26458332"
+       cy="109.8021"
+       cx="109.80209"
+       transform="translate(-52.748173,-79.2065)" />
+    <circle
+       r="0.26458332"
+       cy="109.8021"
+       cx="111.125"
+       transform="translate(-52.748173,-79.2065)" />
+    <circle
+       r="0.26458332"
+       cy="109.8021"
+       cx="112.44792"
+       transform="translate(-52.748173,-79.2065)" />
+  </g>
+</svg>

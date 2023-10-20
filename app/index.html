@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Coucou</title>
+
+    <!-- To avoid some security attack -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/toolbar.css">
+    <link rel="stylesheet" href="css/symbol.css">
+
+    <!-- script links -->
+    <script type="text/javascript" src="./lib/jquery-3.3.1.min.js"> </script>
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header">
+      <h1 id="header-title"> Maya Language </h1>
+      <div id="header-buttons">
+        <button type="button" class="header-button" id="minimize-button">
+          <to-import url="./resources/icon/minimize.svg"> </to-import>
+        </button>
+        <button type="button" class="header-button" id="maximize-button">
+          <to-import url="./resources/icon/maximize.svg"> </to-import>
+        </button>
+        <button type="button" class="header-button" id="close-button">
+          <to-import url="./resources/icon/close.svg"> </to-import>
+        </button>
+      </div>
+    </header>
+
+    <!-- nav -->
+    <nav id="nav">
+      <button type="button" class="nav-button" state="selected" toOpen="create-symbol-panel">
+        <to-import class="nav-button-icon" url="./resources/icon/pen.svg"> </to-import>
+        <p class="nav-button-label"> créer un symbole </p>
+      </button>
+      <button type="button" class="nav-button" toOpen="write-message-panel">
+        <to-import class="nav-button-icon" url="./resources/icon/add.svg"> </to-import>
+        <p class="nav-button-label"> écrire un message </p>
+      </button>
+    </nav>
+
+    <!-- main panel -->
+    <main id="main">
+
+      <!-- Panel de creation de symboles -->
+      <div id="create-symbol-panel" state="open" class="main-panel">
+        
+      </div>
+
+      <!-- Panel d'écriture de messages -->
+      <div id="write-message-panel" class="main-panel">
+
+      </div>
+    </main>
+
+    <!-- script links -->
+    <script type="text/javascript" src="./js/utils.js"> </script>
+    <script type="text/javascript" src="./js/header.js"> </script>
+    <script type="text/javascript" src="./js/nav.js"> </script>
+    <script type="text/javascript" src="./js/listenerInit.js"> </script>
+    <script type="text/javascript" src="./js/symbol.js"> </script>
+    <script type="text/javascript" src="./js/symbolManager.js"> </script>
+    <script type="text/javascript" src="./js/const.js"> </script>
+  </body>
+</html>

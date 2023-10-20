@@ -1,0 +1,172 @@
+
+.symbols-container {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  transition: margin-right 0.2s linear;
+
+}
+
+.symbols-container[organisation="gallery"] {
+
+  flex-wrap: wrap;
+
+}
+
+.symbols-container[organisation="gallery"] .direction-button {
+
+  display: none;
+
+}
+
+.symbols-container[organisation="gallery"] .add-symbol-direction-button {
+
+  display: flex;
+
+}
+
+.symbol {
+
+  --symbol-size: 300px;
+  --symbol-border-size: calc(5 / 200 * var(--symbol-size));
+  --symbol-bott-size: calc(var(--symbol-size) / 3);
+  --space-between-bott: calc(0.1 * var(--symbol-size));
+  --space-between-symbol: calc(0.2 * var(--symbol-size));
+  --symbol-drawer-point-size: calc(5 / 200 * var(--symbol-size));
+  --symbol-drawer-point-color: red;
+  --symbol-drawer-point-trigger-zone: calc(25 / 200 * var(--symbol-size));
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: var(--space-between-symbol);
+
+}
+
+.symbols-container[organisation="solo"] .symbol {
+
+  --symbol-size: 300px;
+
+}
+
+.symbols-container[organisation="gallery"] .symbol {
+
+  --symbol-size: 100px;
+
+}
+
+.symbols-container[organisation="solo"] .symbol[state="selected"] {
+
+  --symbol-size: 350px;
+
+}
+
+.symbols-container[organisation="gallery"] .symbol[state="selected"] {
+
+  background-color: blue;
+
+}
+
+.symbol-bott-container {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.symbol-drawer {
+
+  width: var(--symbol-size);
+  height: var(--symbol-size);
+  background-color: var(--light-grey);
+  border: solid var(--symbol-border-size) var(--dark-black);
+  border-radius: 5px;
+  margin-bottom: 0;
+  transform: translate(0);
+
+}
+
+.symbol-drawer-svg {
+
+  width: inherit;
+  height: inherit;
+  transform: translate(calc( -1 * var(--symbol-border-size) ), calc( -1 * var(--symbol-border-size) ));
+
+}
+
+.symbol-drawer-point {
+
+  position: absolute;
+  width: var(--symbol-drawer-point-trigger-zone);
+  height: var(--symbol-drawer-point-trigger-zone);
+  transform: translate(-50%, -50%);
+
+}
+
+.symbol-drawer-point::after {
+
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--symbol-drawer-point-color);
+  width: var(--symbol-drawer-point-size);
+  height: var(--symbol-drawer-point-size);
+
+}
+
+.symbol-drawer-point[state="hide"]::after {
+
+  background-color: transparent;
+
+}
+
+.symbol-drawer-point:hover::after {
+
+  background-color: blue;
+
+}
+
+.symbol-bott {
+
+  width: var(--symbol-bott-size);
+  height: var(--symbol-bott-size);
+  fill: var(--light-grey);
+  stroke: var(--dark-black);
+  stroke-width: calc(0.286395 / 300 * var(--symbol-size));
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+}
+
+.symbol-bott:not(.symbol-bott:last-child):not(.symbol-bott:first-child) {
+
+  margin: var(--space-between-bott);
+
+}
+
+.symbol-bott:hover {
+
+  fill: var(--hover-dark-grey);
+
+}
+
+.symbol-bott[state="selected"] {
+
+  fill: var(--dark-black);
+
+}
+
+.symbol-bott[state="selected"]:hover {
+
+  fill: var(--hover-dark-black);
+
+}

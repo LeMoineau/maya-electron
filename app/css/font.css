@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "jura";
+  src: url("./../resources/jura/Jura-Light.ttf");
+}
+
+@font-face {
+  font-family: "jura-semibold";
+  src: url("./../resources/jura/Jura-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "jura-bold";
+  src: url("./../resources/jura/Jura-Bold.ttf");
+}
